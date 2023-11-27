@@ -258,9 +258,9 @@ Voorwaardelijke criteria:
             </fieldset>
 
             <!-- Inhoudelijke Criteria -->
-            <fieldset class="mb-3">
+            <fieldset class="mb-3 breakPage">
               <legend>Inhoudelijke Criteria</legend>
-              <div class="mb-3 pbreak">
+              <div class="mb-3">
                 <label
                   for="organisationalJourney"
                   class="form-label"
@@ -302,7 +302,7 @@ De Organisational journey maakt op een beeldende en overtuigende manier duidelij
                             </textarea
                 >
               </div>
-              <div class="mb-3 pbreak">
+              <div class="mb-3 breakPage">
                 <label
                   for="logboek"
                   class="form-label"
@@ -340,7 +340,7 @@ Het logboek bevat een consistente onderbouwing van de stappen en keuzes die gema
                             </textarea
                 >
               </div>
-              <div class="mb-3 pbreak">
+              <div class="mb-3 breakPage">
                 <label
                   for="verantwoordingsdocument"
                   class="form-label"
@@ -374,7 +374,7 @@ Het verantwoordingsdocument laat zien dat de professional met een kritische teru
 
             <button
               type="submit"
-              class="btn btn-primary"
+              class="btn btn-primary breakPage"
             >
               Bereken Cijfer
             </button>
@@ -456,8 +456,7 @@ Het verantwoordingsdocument laat zien dat de professional met een kritische teru
           image: { type: "jpeg", quality: 0.98 },
           html2canvas: { scale: 2 },
           jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-        }).set({
-          pagebreak: { mode: "avoid-all", before: ".pbreak" },
+          pagebreak: { mode: ["css", "legacy"], before: ".breakPage" },
         });
       }
     </script>
