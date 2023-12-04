@@ -129,11 +129,11 @@
         class="pt-5"
         id="dag1"
       >
-        <div class="row align-items-center">
+        <div class="row align-items-center m-3">
           <h2>Dag 1: Strategische waarde van data</h2>
           <hr />
           <!-- Image Column -->
-          <div class="col-md-5">
+          <div class="col-md-5 align-self-start">
             <img
               src="workshop1.jpeg"
               alt="Workshop Image"
@@ -142,7 +142,7 @@
           </div>
 
           <!-- Text Column -->
-          <div class="col-md-7">
+          <div class="col-md-7 align-self-start">
             <h3>Deel 1: Data Driven Decision Making</h3>
             <p>
               We duiken in de wereld van besluitvorming en hoe dit samenhangt
@@ -168,67 +168,106 @@
               en efficiëntie.
             </p>
 
-            <p>
-              Deze workshop biedt zowel theoretische kennis als praktische
-              vaardigheden om de waarde van data in uw organisatie te benutten.
-            </p>
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Programma
+            </button>
           </div>
         </div>
-        <table class="table table-striped">
-          <h3>Programma</h3>
-          <thead>
-            <tr>
-              <th scope="col">Tijd</th>
-              <th scope="col">Activiteit</th>
-              <th scope="col">Onderwerpen</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>00:00</td>
-              <td>Welkom</td>
-              <td>
-                Korte voorstelronde<br />Doelstelling en opzet van de module<br />Terugblik
-                op de voorbereiding en praktijkopdrachten
-              </td>
-            </tr>
-            <tr>
-              <td>00:45</td>
-              <td>Start deel 1</td>
-              <td>Decision Making</td>
-            </tr>
-            <tr>
-              <td>01:15</td>
-              <td>Sprint Run 1</td>
-              <td>Decision Making Game</td>
-            </tr>
-            <tr>
-              <td>01:45</td>
-              <td>Sprint Review</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>02:15</td>
-              <td>Start deel 2</td>
-              <td>Data Driven Decision Making</td>
-            </tr>
-            <tr>
-              <td>02:30</td>
-              <td>Sprint Run 2</td>
-              <td>Machine learning / Artificial Intelligence</td>
-            </tr>
-            <tr>
-              <td>03:00</td>
-              <td>Sprint Review + Discussie</td>
-              <td>Strategische waarde van Data Driven Decision Making</td>
-            </tr>
-            <tr>
-              <td>03:30</td>
-              <td>Einde</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+        
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3
+                  class="modal-title"
+                  id="exampleModalLabel"
+                >
+                  Programma
+                </h3>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Tijd</th>
+                      <th scope="col">Activiteit</th>
+                      <th scope="col">Onderwerpen</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>00:00</td>
+                      <td>Welkom</td>
+                      <td>
+                        Korte voorstelronde<br />Doelstelling en opzet van de
+                        module<br />Terugblik op de voorbereiding en
+                        praktijkopdrachten
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>00:45</td>
+                      <td>Start deel 1</td>
+                      <td>Decision Making</td>
+                    </tr>
+                    <tr>
+                      <td>01:15</td>
+                      <td>Sprint Run 1</td>
+                      <td>Decision Making Game</td>
+                    </tr>
+                    <tr>
+                      <td>01:45</td>
+                      <td>Sprint Review</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>02:15</td>
+                      <td>Start deel 2</td>
+                      <td>Data Driven Decision Making</td>
+                    </tr>
+                    <tr>
+                      <td>02:30</td>
+                      <td>Sprint Run 2</td>
+                      <td>Machine learning / Artificial Intelligence</td>
+                    </tr>
+                    <tr>
+                      <td>03:00</td>
+                      <td>Sprint Review + Discussie</td>
+                      <td>
+                        Strategische waarde van Data Driven Decision Making
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>03:30</td>
+                      <td>Einde</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+
         <div class="row align-items-center">
           <hr />
           <!-- Image Column -->
@@ -548,7 +587,7 @@
             <!-- Button trigger modal -->
             <button
               type="button"
-              class="btn btn-primary btn-lg my-5"
+              class="btn btn-outline-primary btn-lg my-5"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
@@ -681,298 +720,162 @@
           >
             <!-- Student Name -->
             <div class="mb-3">
-              <label
-                for="studentName"
-                class="form-label"
-                >Studentnaam (Voornaam)</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="studentName"
-                placeholder="Voornaam"
-                required
-              />
-            </div>
+              <form id="beoordelingsFormulier">
+                <div class="mb-3">
+                  <label for="studentName" class="form-label">Studentnaam (Voornaam)</label>
+                  <input type="text" class="form-control" id="studentName" placeholder="Voornaam" required />
+                </div>
 
-            <!-- Voorwaardelijke Criteria -->
-            <fieldset class="mb-3">
-              <legend>Voorwaardelijke Criteria</legend>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="nederlands"
-                />
-                <label
-                  class="form-check-label"
-                  for="nederlands"
-                  >Correct Nederlands geschreven</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="bronvermelding"
-                />
-                <label
-                  class="form-check-label"
-                  for="bronvermelding"
-                  >Juiste bronvermelding volgens APA-normen</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="inhoudsopgave"
-                />
-                <label
-                  class="form-check-label"
-                  for="inhoudsopgave"
-                  >Correcte opbouw van het document</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="opbouw"
-                />
-                <label
-                  class="form-check-label"
-                  for="opbouw"
-                  >Inhoudsopgave aanwezig.</label
-                >
-              </div>
-              <textarea
-                class="form-control mt-2 textarea-autosize"
-                id="organisationalJourneyComments"
-                rows="12"
-              >
-Voorwaardelijke criteria:
+                <!-- Voorwaardelijke Criteria -->
+                <fieldset class="mb-3">
+                  <legend>Voorwaardelijke Criteria</legend>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="nederlands" />
+                    <label class="form-check-label" for="nederlands">Correct Nederlands geschreven</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="bronvermelding" />
+                    <label class="form-check-label" for="bronvermelding">Juiste bronvermelding volgens APA-normen</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="inhoudsopgave" />
+                    <label class="form-check-label" for="inhoudsopgave">Correcte opbouw van het document</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="opbouw" />
+                    <label class="form-check-label" for="opbouw">Inhoudsopgave aanwezig.</label>
+                  </div>
+                  <textarea class="form-control mt-2 textarea-autosize" id="organisationalJourneyComments" rows="12">
+              Voorwaardelijke criteria:
 
-- Correct Nederlands geschreven;
+              - Correct Nederlands geschreven;
 
-- Juiste bronvermelding volgens APA-normen;
+              - Juiste bronvermelding volgens APA-normen;
 
-- Correcte opbouw van het document;
+              - Correcte opbouw van het document;
 
-- Inhoudsopgave aanwezig.
-
+              - Inhoudsopgave aanwezig.
+              
                         </textarea
               >
-            </fieldset>
+                </fieldset>
 
-            <!-- Inhoudelijke Criteria -->
-            <fieldset class="mb-3 breakPage">
-              <legend>Inhoudelijke Criteria</legend>
-              <div class="mb-3">
-                <label
-                  for="organisationalJourney"
-                  class="form-label"
-                  >Ontwerp Organisational Journey</label
-                >
-                <input
-                  type="number"
-                  class="form-control"
-                  id="organisationalJourney"
-                  min="1"
-                  max="10"
-                  placeholder="0"
-                />
-                <textarea
-                  class="form-control mt-2 textarea-autosize"
-                  id="organisationalJourneyComments"
-                  rows="40"
-                >
-De Organisational journey maakt op een beeldende en overtuigende manier duidelijk:
+                <!-- Inhoudelijke Criteria -->
+                <fieldset class="mb-3 breakPage">
+                  <legend>Inhoudelijke Criteria</legend>
+                  <div class="mb-3">
+                    <label for="organisationalJourney" class="form-label">Ontwerp Organisational Journey</label>
+                    <input type="number" class="form-control" id="organisationalJourney" min="1" max="10" placeholder="0" />
+                    <textarea class="form-control mt-2 textarea-autosize" id="organisationalJourneyComments" rows="40">
+              De Organisational journey maakt op een beeldende en overtuigende manier duidelijk:
+              - Hoe het nieuwe interne model van de datagedreven organisatie er uit zou kunnen zien in de toekomst;
+              - Wat de achterliggende waarden, aannames en keuzes zijn en hoe deze in lijn zijn met de strategische doelen van de organisatie;
+              - Wat de toegevoegde waarde van data, analytics en research is voor de organisatie;
+              - Welke mogelijkheden en toepassingen van technologie geschikt zijn voor datagedreven werken in de context van de organisatie;
+              - Hoe de organisatie een start met de transformatie kan maken van de huidige situatie naar de gewenste situatie in een tijdshorizon van een jaar;
+              - Op welke wijze medewerkers/team kunnen worden meegenomen in de omslag naar datagedreven werken (op de aspecten cultuur, leiderschap, alignment en samenwerking);
+              - Wat doelstellingen zijn en welke interventies er plaats moeten vinden om de gewenste situatie te bereiken inclusief uitdagende milestones en planning;
+              - Wat kritische succesfactoren en kpi’s zijn en hoe er geleerd kan worden van tussentijdse metingen (empirische cyclus);
+              - Welke ethische vraagstukken een rol spelen (denk aan privacy, autonomie, vrijheid, etc.) en hoe deze zich verhouden tot de waarden van de organisatie.
+              </textarea>
+                  </div>
+                  <div class="mb-3 breakPage">
+                    <label for="logboek" class="form-label">Logboek met onderbouwing van stappen en keuzes</label>
+                    <input type="number" class="form-control" id="logboek" min="1" max="10" placeholder="0" />
+                    <textarea class="form-control mt-2 textarea-autosize" id="organisationalJourneyComments" rows="40">
+              Het logboek bevat een consistente onderbouwing van de stappen en keuzes die gemaakt zijn om te komen tot de organisational journey. Het logboek onderbouwt:
+              - Op welke wijze de strategische koers van de organisatie onderzocht is volgens de empirische cyclus (iteratie 1)
+              - Op welke wijze de huidige status van de organisatie met betrekking tot data gedreven organiseren onderzocht is volgens de empirische cyclus (iteratie 2)
+              - Welk wetenschappelijk gevalideerd model gebruikt is om een nulmeting te doen vanuit verschillende bedrijfskundige perspectieven en waarom juist dit model (iteratie 2);
+              - Hoe de resultaten van iteratie 1 en 2 zijn meegenomen in het ontwerp van de organisational journey (iteratie 3);
+              - Op welke wijze waarop de inzichten vanuit (wetenschappelijke) literatuur in het ontwerp van de organisational journey verwerkt zijn;
+              - Op welke wijze stakeholders in de organisatie zijn betrokken bij het ontwerp van de organisational journey.
+              - Op welke wijze feedback van de interne organisatie en intervisiegroep is verwerkt in de definitieve versie van de organisational journey.
+              </textarea>
+                  </div>
+                  <div class="mb-3 breakPage">
+                    <label for="verantwoordingsdocument" class="form-label">Verantwoordingsdocument en reflectie</label>
+                    <input type="number" class="form-control" id="verantwoordingsdocument" min="1" max="10" placeholder="0" />
+                    <textarea class="form-control mt-2 textarea-autosize" id="organisationalJourneyComments" rows="20">
+              Het verantwoordingsdocument laat zien dat de professional met een kritische terugblik kan terugkijken naar zijn bijdrage in het proces en de uitkomsten;
+              - Het verslag geeft de lezer op inspirerende wijze inzicht in persoonlijke ervaringen en vernieuwde inzichten;
+              - Er is een grondige/verrassende/inspirerende beschrijving gegeven van de rol van bedrijfskundige binnen en buiten de organisatie als het gaat om het inrichten en besturen van data gedreven organisaties.
+              - Gaat hierbij ook in op morele waarden en ethische overwegingen bij die een rol spelen bij datagedreven organiseren.
+              </textarea>
+                  </div>
+                </fieldset>
 
-- Hoe het nieuwe interne model van de datagedreven organisatie er uit zou kunnen zien in de toekomst;
+                <button type="submit" class="btn btn-primary breakPage">Bereken Cijfer</button>
+                <!-- Display the result -->
+                <div class="mt-4" id="result"></div>
+              </form>
 
-- Wat de achterliggende waarden, aannames en keuzes zijn en hoe deze in lijn zijn met de strategische doelen van de organisatie;
+              <!-- Display the result -->
+              <div class="mt-4" id="result"></div>
 
-- Wat de toegevoegde waarde van data, analytics en research is voor de organisatie;
+              <!-- Button for saving as PDF -->
+              <button class="btn btn-secondary mt-3" onclick="saveAsPdf()" type="button">Opslaan als PDF</button>
 
-- Welke mogelijkheden en toepassingen van technologie geschikt zijn voor datagedreven werken in de context van de organisatie;
-
-- Hoe de organisatie een start met de transformatie kan maken van de huidige situatie naar de gewenste situatie in een tijdshorizon van een jaar;
-
-- Op welke wijze medewerkers/team kunnen worden meegenomen in de omslag naar datagedreven werken (op de aspecten cultuur, leiderschap, alignment en samenwerking);
-
-- Wat doelstellingen zijn en welke interventies er plaats moeten vinden om de gewenste situatie te bereiken inclusief uitdagende milestones en planning;
-
-- Wat kritische succesfactoren en kpi’s zijn en hoe er geleerd kan worden van tussentijdse metingen (empirische cyclus);
-
-- Welke ethische vraagstukken een rol spelen (denk aan privacy, autonomie, vrijheid, etc.) en hoe deze zich verhouden tot de waarden van de organisatie.
-
-                            </textarea
-                >
               </div>
-              <div class="mb-3 breakPage">
-                <label
-                  for="logboek"
-                  class="form-label"
-                  >Logboek met onderbouwing van stappen en keuzes</label
-                >
-                <input
-                  type="number"
-                  class="form-control"
-                  id="logboek"
-                  min="1"
-                  max="10"
-                  placeholder="0"
-                />
-                <textarea
-                  class="form-control mt-2 textarea-autosize"
-                  id="organisationalJourneyComments"
-                  rows="40"
-                >
-Het logboek bevat een consistente onderbouwing van de stappen en keuzes die gemaakt zijn om te komen tot de organisational journey. Het logboek onderbouwt:
-
-- Op welke wijze de strategische koers van de organisatie onderzocht is volgens de empirische cyclus (iteratie 1)
-
-- Op welke wijze de huidige status van de organisatie met betrekking tot data gedreven organiseren onderzocht is volgens de empirische cyclus (iteratie 2)
-
-- Welk wetenschappelijk gevalideerd model gebruikt is om een nulmeting te doen vanuit verschillende bedrijfskundige perspectieven en waarom juist dit model (iteratie 2);
-
-- Hoe de resultaten van iteratie 1 en 2 zijn meegenomen in het ontwerp van de organisational journey (iteratie 3);
-
-- Op welke wijze waarop de inzichten vanuit (wetenschappelijke) literatuur in het ontwerp van de organisational journey verwerkt zijn;
-
-- Op welke wijze stakeholders in de organisatie zijn betrokken bij het ontwerp van de organisational journey.
-
-- Op welke wijze feedback van de interne organisatie en intervisiegroep is verwerkt in de definitieve versie van de organisational journey. 
-
-                            </textarea
-                >
+              </section>
               </div>
-              <div class="mb-3 breakPage">
-                <label
-                  for="verantwoordingsdocument"
-                  class="form-label"
-                  >Verantwoordingsdocument en reflectie</label
-                >
-                <input
-                  type="number"
-                  class="form-control"
-                  id="verantwoordingsdocument"
-                  min="1"
-                  max="10"
-                  placeholder="0"
-                />
-                <textarea
-                  class="form-control mt-2 textarea-autosize"
-                  id="organisationalJourneyComments"
-                  rows="20"
-                >
-Het verantwoordingsdocument laat zien dat de professional met een kritische terugblik kan terugkijken naar zijn bijdrage in het proces en de uitkomsten;
+              <script>
+                function calculateGrade(event) {
+                  event.preventDefault();
 
-- Het verslag geeft de lezer op inspirerende wijze inzicht in persoonlijke ervaringen en vernieuwde inzichten;
+                  // Check if all voorwaardelijke criteria are met
+                  const criteriaMet =
+                    document.getElementById("nederlands").checked &&
+                    document.getElementById("bronvermelding").checked &&
+                    document.getElementById("inhoudsopgave").checked &&
+                    document.getElementById("opbouw").checked;
 
-- Er is een grondige/verrassende/inspirerende beschrijving gegeven van de rol van bedrijfskundige binnen en buiten de organisatie als het gaat om het inrichten en besturen van data gedreven organisaties.
+                  if (!criteriaMet) {
+                    document.getElementById("result").innerHTML =
+                      "Er is niet voldaan aan de voorwaardelijke criteria";
+                    return;
+                  }
 
-- Gaat hierbij ook in op morele waarden en ethische overwegingen bij die een rol spelen bij datagedreven organiseren.
+                  // Retrieve scores
+                  const organisationalJourney =
+                    parseFloat(document.getElementById("organisationalJourney").value) || 0;
+                  const logboek = parseFloat(document.getElementById("logboek").value) || 0;
+                  const verantwoordingsdocument =
+                    parseFloat(document.getElementById("verantwoordingsdocument").value) || 0;
 
-                    </textarea
-                >
-              </div>
-            </fieldset>
+                  // Calculate weighted grade
+                  let grade = 0;
+                  grade += organisationalJourney * 40;
+                  grade += logboek * 40;
+                  grade += verantwoordingsdocument * 20;
 
-            <button
-              type="submit"
-              class="btn btn-primary breakPage"
-            >
-              Bereken Cijfer
-            </button>
-            <!-- Display the result -->
-            <div
-              class="mt-4"
-              id="result"
-            ></div>
-          </form>
+                  grade /= 100; // Divide by total weightings
 
-          <!-- Display the result -->
-          <div
-            class="mt-4"
-            id="result"
-          ></div>
+                  // Display the result
+                  const resultDiv = document.getElementById("result");
+                  const studentName = document.getElementById("studentName").value;
+                  resultDiv.innerHTML = `<strong>${studentName}'s Cijfer:</strong> ${grade.toFixed(1)}`;
+                }
+              </script>
+              <script>
+                function saveAsPdf() {
+                  const element = document.getElementById("beoordelingsFormulier");
+                  const studentName = document.getElementById("studentName").value;
+                  html2pdf(element, {
+                    margin: 8,
+                    filename: "beoordelingsformulier-" + studentName.toLowerCase() + ".pdf",
+                    image: { type: "jpeg", quality: 0.98 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+                    pagebreak: { mode: ["css", "legacy"], before: ".breakPage" },
+                  });
+                }
+              </script>
 
-          <!-- Button for saving as PDF -->
-          <button
-            class="btn btn-secondary mt-3"
-            onclick="saveAsPdf()"
-          >
-            Opslaan als PDF
-          </button>
-        </div>
-      </section>
-    </div>
-    <script>
-      function calculateGrade(event) {
-        event.preventDefault();
+              <!-- html2pdf library -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 
-        // Check if all voorwaardelijke criteria are met
-        const criteriaMet =
-          document.getElementById("nederlands").checked &&
-          document.getElementById("bronvermelding").checked &&
-          document.getElementById("inhoudsopgave").checked &&
-          document.getElementById("opbouw").checked;
-
-        if (!criteriaMet) {
-          document.getElementById("result").innerHTML =
-            "Er is niet voldaan aan de voorwaardelijke criteria";
-          return;
-        }
-
-        // Retrieve scores
-        const organisationalJourney =
-          parseFloat(document.getElementById("organisationalJourney").value) ||
-          0;
-        const logboek =
-          parseFloat(document.getElementById("logboek").value) || 0;
-        const verantwoordingsdocument =
-          parseFloat(
-            document.getElementById("verantwoordingsdocument").value
-          ) || 0;
-
-        // Calculate weighted grade
-        let grade = 0;
-        grade += organisationalJourney * 40;
-        grade += logboek * 40;
-        grade += verantwoordingsdocument * 20;
-
-        grade /= 100; // Divide by total weightings
-
-        // Display the result
-        const resultDiv = document.getElementById("result");
-        const studentName = document.getElementById("studentName").value;
-        resultDiv.innerHTML = `<strong>${studentName}'s Cijfer:</strong> ${grade.toFixed(
-          1
-        )}`;
-      }
-    </script>
-    <script>
-      function saveAsPdf() {
-        const element = document.getElementById("beoordelingsFormulier");
-        const studentName = document.getElementById("studentName").value;
-        html2pdf(element, {
-          margin: 8,
-          filename:
-            "beoordelingsformulier-" + studentName.toLowerCase() + ".pdf",
-          image: { type: "jpeg", quality: 0.98 },
-          html2canvas: { scale: 2 },
-          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-          pagebreak: { mode: ["css", "legacy"], before: ".breakPage" },
-        });
-      }
-    </script>
-
-    <!-- html2pdf library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+              <!-- Bootstrap JS -->
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+              </body>
+              </html>
